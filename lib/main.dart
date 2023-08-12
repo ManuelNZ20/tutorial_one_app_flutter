@@ -22,7 +22,8 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(
             create: (_) =>
                 TutorialProvider(tutorialRepository: tutorialRepositoryImpl)
-                  ..addLandingPageTutorial())
+                  ..addLandingPageTutorial()),
+        // ChangeNotifierProvider(create: (_)=> IndicatorProvider())
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,

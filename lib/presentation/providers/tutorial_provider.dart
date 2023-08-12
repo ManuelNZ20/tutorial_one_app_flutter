@@ -11,6 +11,7 @@ class TutorialProvider extends ChangeNotifier {
   Future<void> addLandingPageTutorial() async {
     final List<Tutorial> listPage = await tutorialRepository.getLandingPageTutorial();
     pageTutorial.addAll(listPage);
+    print('fdf');
     notifyListeners();
   }
 
